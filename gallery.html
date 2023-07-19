@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta data-name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style/gallery.css" />
+
+    <link rel="icon" href="images/logo/av-white.png" type="image/gif" />
+
+    <!--===== Boxicons CSS =====-->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>Zodiacs Gallery</title>
+  </head>
+  <body>
+    <div class="logo-container" id="upper">
+      <a href="homepage.html"><img src="images/logo/av-white.png" alt=""></a>
+  </div>
+    <div class="container">
+      <div class="search-box">
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Type a zodiac name here..." />
+      </div>
+
+      <div class="images">
+        <div class="image-box" data-name="libra">
+          <img src="images/images-gallery/andrew.jpeg" alt="" onclick="expandImage(this)" />
+          <h6>Ando</h6>
+        </div>
+        <div class="image-box" data-name="gemini">
+          <img src="images/images-gallery/angello.jpg" alt="" onclick="expandImage(this)" />
+          <h6>AC</h6>
+        </div>
+        <div class="image-box" data-name="pisces">
+          <img src="images/images-gallery/kana-mirai.jpg" alt="" onclick="expandImage(this)" onclick="expandImage(this)" />
+          <h6>Kana Mirai</h6>
+        </div>
+        <div class="image-box" data-name="virgo">
+          <img src="images/images-gallery/archell.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Arseljeynn</h6>
+        </div>
+        <div class="image-box" data-name="libra">
+          <img src="images/images-gallery/tael.jpeg" alt="" onclick="expandImage(this)" />
+          <h6>Tael</h6>
+        </div>
+        <div class="image-box" data-name="sagittarius">
+          <img src="images/images-gallery/diana.jpeg" alt="" onclick="expandImage(this)" />
+          <h6>Eli</h6>
+        </div>
+        <div class="image-box" data-name="pisces">
+          <img src="images/images-gallery/irene.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Neth-neth</h6>
+        </div>
+        <div class="image-box" data-name="scorpio">
+          <img src="images/images-gallery/aimcy.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Aimcy</h6>
+        </div>
+        <div class="image-box" data-name="libra">
+          <img src="images/images-gallery/jen.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Jen</h6>
+        </div>
+        <div class="image-box" data-name="libra">
+          <img src="images/images-gallery/cedo.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Cedo</h6>
+        </div>
+        <div class="image-box" data-name="gemini">
+          <img src="images/images-gallery/boss ken.JPG" alt="" onclick="expandImage(this)" />
+          <h6>Boss Ken</h6>
+        </div>
+        <div class="image-box" data-name="virgo">
+          <img src="images/images-gallery/pootato-salad.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Pootato Salad</h6>
+        </div>
+        <div class="image-box" data-name="sagittarius">
+          <img src="images/images-gallery/mica.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Aimer</h6>
+        </div>
+        <div class="image-box" data-name="capricorn">
+          <img src="images/images-gallery/micah.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Ayka</h6>
+          <div class="image-box" data-name="gemini">
+            <img src="images/images-gallery/kendall.jpg" alt="" onclick="expandImage(this)" />
+            <h6>Kendall</h6>
+          </div>
+        </div>
+        <div class="image-box" data-name="leo">
+          <img src="images/images-gallery/nikol.jpeg" alt="" onclick="expandImage(this)" />
+          <h6>Nikol</h6>
+        </div>
+        <div class="image-box" data-name="scorpio">
+          <img src="images/images-gallery/paul.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Papa' P</h6>
+        </div>
+        <div class="image-box" data-name="aries">
+          <img src="images/images-gallery/luna.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Luna</h6>
+        </div>
+        <div class="image-box" data-name="aquarius">
+          <img src="images/images-gallery/pauline.png" alt="" onclick="expandImage(this)" />
+          <h6>Poleng</h6>
+        </div>
+        <div class="image-box" data-name="aquarius">
+          <img src="images/images-gallery/mekmek.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Mekmek</h6>
+        </div>
+        <div class="image-box" data-name="libra">
+          <img src="images/images-gallery/rochelle.png" alt="" onclick="expandImage(this)" />
+          <h6>Chancy</h6>
+        </div>
+        <div class="image-box" data-name="aries">
+          <img src="images/images-gallery/jai.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Jai</h6>
+        </div>
+        <div class="image-box" data-name="sagittarius">
+          <img src="images/images-gallery/ron.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Norvin</h6>
+        </div>
+        <div class="image-box" data-name="libra">
+          <img src="images/images-gallery/steven.jpeg" alt="" onclick="expandImage(this)" />
+          <h6>Sykes</h6>
+        </div>
+        <div class="image-box" data-name="aquarius">
+          <img src="images/images-gallery/vanessa.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Amethyst</h6>
+        </div>
+        <div class="image-box" data-name="leo">
+          <img src="images/images-gallery/kat.webp" alt=""onclick="expandImage(this)" />
+          <h6>Kat</h6>
+        </div>
+        <div class="image-box" data-name="gemini">
+          <img src="images/images-gallery/canacer.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Cancer</h6>
+        </div>
+        <div class="image-box" data-name="aquarius">
+          <img src="images/images-gallery/louzven.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Louzven</h6>
+        </div>
+        <div class="image-box" data-name="scorpio">
+          <img src="images/images-gallery/jabog.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Jabog</h6>
+        </div>
+        <div class="image-box" data-name="libra">
+          <img src="images/images-gallery/ares.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Ares</h6>
+        </div>
+        <div class="image-box" data-name="leo">
+          <img src="images/images-gallery/liane.jpeg" alt="" onclick="expandImage(this)" />
+          <h6>Liane</h6>
+        </div>
+        <div class="image-box" data-name="gemini">
+          <img src="images/images-gallery/pulsar.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Pulsar</h6>
+        </div>
+        <div class="image-box" data-name="libra">
+          <img src="images/images-gallery/jeff.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Jeff</h6>
+        </div>
+        <div class="image-box" data-name="capricorn">
+          <img src="images/images-gallery/carl.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Carl</h6>
+        </div>
+        <div class="image-box" data-name="aquarius">
+          <img src="images/images-gallery/sherene.jpg" alt="" onclick="expandImage(this)" />
+          <h6>None</h6>
+        </div>
+        <div class="image-box" data-name="aries">
+          <img src="images/images-gallery/kate.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Kate</h6>
+        </div>
+        <div class="image-box" data-name="sagittarius">
+          <img src="images/images-gallery/seph.jpg" alt="" onclick="expandImage(this)" />
+          <h6>Seph</h6>
+        </div>
+        <div class="image-box" data-name="sagittarius">
+          <img src="images/images-gallery/susej.jpeg" alt="" onclick="expandImage(this)" />
+          <h6>Susej</h6>
+        </div>
+        
+
+
+
+        
+      </div>
+    </div>
+    
+    <div id="overlay" onclick="shrinkImage()">
+      <img id="expandedImage" src="" alt="Expanded Image">
+  </div>
+
+    <script src="js/gallery.js"></script>
+    <script src="js/img-hull.js"></script>
+  </body>
+</html>

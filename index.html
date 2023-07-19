@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with Astro'Verse</title>
+    <link rel="icon" href="images/logo/av-white.png" type="image/gif" />
+    <link rel="stylesheet" href="style/getting-started.css" />
+    <!-- Boxicons & FONTAWESOME CSS -->
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/63be86936d.js" crossorigin="anonymous"></script>
+    <script src="js/getting-started.js" defer></script>
+  </head>
+  <body>
+
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+
+
+
+    <div class="clock">
+      <div class="wrappering">
+        <div class="display">
+           <div id="time"></div>
+        </div>
+        <span></span>
+        <span></span>
+     </div>
+    </div>
+
+    <div class="get-started">
+      <H2>Welcome to</H2>
+      <h1>ASTRO'VERSE</h1>
+      <p>"Embark on a voyage through the zodiac, where each constellation holds a story and every birthdate carries cosmic significance. Welcome to Zodiac Chronicles, your guide to the celestial realm."</p>
+      <div class="button">
+        <a href="homepage.html"><p>Continue</p></a>
+      </div>
+      <div class="ask-button">
+        <button type="button" onclick="askToggle()">Ask Question Here!</button>
+      </div>
+    </div>
+
+    <div class="ask-questions">
+      <div class="glass">
+        <h1>What is your question??</h1>
+        <p>note: prefer to ask only a zodiac related questions! </p>
+        <div class="input">
+            <input type="text"id="userBox" onkeydown="if(event.keyCode == 13){ talk()}" placeholder="Type your Question Here..."/>
+        </div>
+            <p id="chatLog">Answer Will Appear Hear</p>
+      </div>
+    </div>
+
+
+
+    <nav class="sidebar locked">
+      <div class="logo_items flex">
+        <span class="nav_image">
+          <img src="images/logo/av-white.png" alt="logo_img" />
+        </span>
+        <span class="logo_name">Astro'Verse</span>
+        <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+        <i class="bx bx-x" id="sidebar-close"></i>
+      </div>
+
+      <div class="menu_container">
+        <div class="menu_items">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Connect with us here</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="contactform.html" target="_blank" class="link flex">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Us</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="https://www.facebook.com/johnpaul.casthelysian.valdez.8/" target="_blank" class="link flex">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Message Us in Facebook</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <script src="js/ask.js"></script>
+    <script src="js/ask-script.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/preloader.js"></script>
+  </body>
+</html>

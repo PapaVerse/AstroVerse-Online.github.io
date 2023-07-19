@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  :root{
+    --icon-color-hover: rgb(0, 138, 143);
+    --h1-text-color: rgb(248, 248, 248);
+    --bg-main-color:  #66757F;
+    --bg-container-color: rgb(255, 255, 255);
+    --text-span-color: rgb(0, 196, 196);
+    --bg-left-color: rgb(29, 29, 29);
+    --bg-secondary-color:  #1B2223;
+    --text-color-main: rgb(255, 255, 255);
+    --bg-right: rgb(177, 177, 177);
+  }
+
+  body
+  {
+    width: 100%;
+    height: 90vh;
+    background: var(--bg-secondary-color);
+  }
+
+  .head-container
+{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  margin: auto;
+}
+
+
+.logo-container{
+  width: 100%;
+  height: 11vh;
+  background: transparent;
+  padding: 16px;
+  position: relative;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-container img{
+  width: 60px;
+  transition: .3s ease;
+  justify-content: center;
+  
+}
+
+.logo-container:hover img{
+  opacity: 0.7;
+}
+
+.head-container h1{
+  font-size: 60px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--h1-text-color);
+  background: linear-gradient(to right, #000 20%, #55dada 30%, #44c4da 70%, #000 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textShine 7s ease-in-out infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+@keyframes textShine {
+  to {
+    background-position: 200%;
+  }
+}
+
+
+.lower-main{
+    width: 100%;
+    height: 85%;
+    background: transparent;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-main .left-first{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 20px;
+}
+
+.vid-container {
+    width: 95%;
+    height: 40vh;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+
+
+
+.vid-container video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.vid-container a button{
+    margin-top: 30px;
+    padding: 8px 22px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    transition: .3s ease;
+}
+
+.vid-container a button:hover{
+    color: white;
+    background: var(--bg-secondary-color);
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+
+.vid-container p{
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+
+.text-below{
+  width: 100%;
+  height: 20%;
+  background: transparent;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text-below h2{
+  color: white;
+  margin-bottom: 20px;
+}
+
+.text-below a{
+  text-decoration: none;
+  
+}
+
+.text-below a p{
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: .3s ease;
+}
+
+.text-below a p:hover{
+  color: #008585;
+}
